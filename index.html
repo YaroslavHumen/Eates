@@ -1,33 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Eats</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <Header>
-        <a href="./index.html">Eats <br><span>Restaurant</span></a>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Product</li>
-                <li>Faq</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </Header>
-    <Main>
-        <section>
-            <img src="./images/Rectangle 48.jpg" alt="">
-            <p>Restaurant app</p>
-            <h1>Why stay hungry when <br>you can order form Eats </h1>
-            <p>Order in exchange for hunger</p>
-            <button>Delivery</button>
-            <button>Menu</button>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Product</li>
+                    <li class="nav__item">Faq</li>
+                    <li class="nav__item">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero__container">
+                <p class="hero__subtitle">Restaurant app</p>
+                <h1 class="hero__title">
+                    Why stay hungry when <br>you can order form Eats
+                </h1>
+                <p class="hero__text">Order in exchange for hunger</p>
+                <div class="hero__buttons">
+                    <button class="btn btn--primary">Delivery</button>
+                    <button class="btn btn--secondary">Menu</button>
+                </div>
+            </div>
         </section>
-        
-    </Main>
-    <FOOter></FOOter>
+
+        <!-- HOW IT WORKS -->
+        <section class="steps">
+            <div class="container steps__container">
+                <h2 class="steps__title">How the app works</h2>
+
+                <div class="steps__item">
+                    <img src="./images/1.png" alt="телефон" class="steps__image">
+
+                    <div class="steps__content">
+                        <h3 class="steps__subtitle">Create an account</h3>
+                        <h2 class="steps__heading">
+                            Create/login to an existing <br> account to get started
+                        </h2>
+                        <p class="steps__text">
+                            An account is created with your email <br>
+                            and a desired password
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="container features__container">
+                <div class="features__content">
+                    <h3 class="features__subtitle">Explore varieties</h3>
+                    <h2 class="features__title">
+                        Shop for your favorite <br> meal as e dey hot.
+                    </h2>
+                    <p class="features__text">
+                        Shop for your favorite meals or drinks <br>
+                        and enjoy while doing it.
+                    </p>
+                </div>
+
+                <img src="./images/2.png" alt="телефон" class="features__image">
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container cta__container">
+                <h2 class="cta__title">Order now.</h2>
+                <p class="cta__text">
+                    Available on your favorite store. Start your premium experience now
+                </p>
+
+                <div class="cta__buttons">
+                    <button class="btn btn--primary">Playstore</button>
+                    <button class="btn btn--secondary">App store</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="./index.html" class="logo">
+                Eats <br><span class="logo__accent">Restaurant</span>
+            </a>
+            <p class="footer__text">Copyright 2020 Bella Onojie.com</p>
+        </div>
+    </footer>
 </body>
+
 </html>
