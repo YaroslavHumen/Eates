@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
@@ -46,10 +51,9 @@ ul {
     margin-right: 165px;
 }
 
-.nav__item:focus,
-.nav__item:hover {
+.nav__item-a:focus,
+.nav__item-a:hover {
     color: #FA4A0C;
-
 }
 
 .hero__container {
